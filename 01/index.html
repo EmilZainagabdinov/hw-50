@@ -10,9 +10,26 @@
     <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="moviecard.js" type="text/babel"></script>
     <title>Document</title>
 </head>
 <body>
+<div id="app"></div>
+
+<script type="text/babel">
+    const movies = (
+        <React.Fragment>
+            <Movie name="Inception" year="2010"
+                   poster="https://st.kp.yandex.net/im/poster/1/5/2/kinopoisk.ru-Inception-1524970.jpg"></Movie>
+            <Movie name="Dark Knight" year="2008"
+                   poster="https://st.kp.yandex.net/im/poster/3/2/0/kinopoisk.ru-The-Dark-Knight-3208136.jpg"></Movie>
+            <Movie name="Arrival" year="2016"
+                   poster="https://st.kp.yandex.net/im/poster/2/8/2/kinopoisk.ru-Arrival-2824807.jpg"></Movie>
+        </React.Fragment>
+    );
+
+    ReactDOM.render(movies, document.getElementById('app'));
+</script>
 
 </body>
 </html>
