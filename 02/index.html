@@ -10,9 +10,21 @@
     <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="header.js" type="text/babel"></script>
     <title>Document</title>
 </head>
 <body>
+<div id="app"></div>
+
+<script type="text/babel">
+    const page = (
+        <React.Fragment>
+            <Header navlink1="Home" navlink2="Shop" navlink3="News" navlink4="Contact" navlink5="About"/>
+        </React.Fragment>
+    );
+
+    ReactDOM.render(page, document.getElementById('app'));
+</script>
 
 </body>
 </html>
