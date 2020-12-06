@@ -1,22 +1,22 @@
 const Header = props => {
     return (
-        <header className="header py-3 bg-light border-bottom border-dark">
+        <header className="header py-3 bg-light border-bottom border-primary">
             <div className="container">
                 <ul className="nav justify-content-center">
                     <li className="nav-item">
-                        <a className="nav-link text-secondary" href="#">{props.navlink1}</a>
+                        <a className="nav-link" href="#">{props.navlink1}</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-secondary" href="#">{props.navlink2}</a>
+                        <a className="nav-link" href="#">{props.navlink2}</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-secondary" href="#">{props.navlink3}</a>
+                        <a className="nav-link" href="#">{props.navlink3}</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-secondary" href="#">{props.navlink4}</a>
+                        <a className="nav-link" href="#">{props.navlink4}</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-secondary" href="#">{props.navlink5}</a>
+                        <a className="nav-link" href="#">{props.navlink5}</a>
                     </li>
                 </ul>
             </div>
