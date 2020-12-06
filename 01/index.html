@@ -14,18 +14,16 @@
     <title>Document</title>
 </head>
 <body>
-<div id="app"></div>
+<div id="app" class="container mt-4"></div>
 
 <script type="text/babel">
     const movies = (
-        <React.Fragment>
-            <Movie name="Inception" year="2010"
-                   poster="https://st.kp.yandex.net/im/poster/1/5/2/kinopoisk.ru-Inception-1524970.jpg"></Movie>
-            <Movie name="Dark Knight" year="2008"
+        <div className="card-deck">
+            <Movie name="Тёмный рыцарь" year="2008"
                    poster="https://st.kp.yandex.net/im/poster/3/2/0/kinopoisk.ru-The-Dark-Knight-3208136.jpg"></Movie>
             <Movie name="Arrival" year="2016"
                    poster="https://st.kp.yandex.net/im/poster/2/8/2/kinopoisk.ru-Arrival-2824807.jpg"></Movie>
-        </React.Fragment>
+        </div>
     );
 
     ReactDOM.render(movies, document.getElementById('app'));
