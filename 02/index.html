@@ -12,6 +12,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
     <script src="Header.js" type="text/babel"></script>
     <script src="Sidebar.js" type="text/babel"></script>
+    <script src="MainBlock.js" type="text/babel"></script>
+    <script src="ItemCard.js" type="text/babel"></script>
     <title>Document</title>
 </head>
 <body>
@@ -21,10 +23,11 @@
     const page = (
         <React.Fragment>
             <Header navlink1="Home" navlink2="Shop" navlink3="News" navlink4="Contact" navlink5="About"/>
-            <div className="mainBlock py-3">
-                <div className="container row my-3">
-                    <Sidebar catLink1="3pc wheels" catLink2="Monoblock" catLink3="Hardware" catLink4="Apparel"
+            <div className="mainBlock container py-3">
+                <div className="row">
+                    <Sidebar catLink1="3pc Wheels" catLink2="Monoblock" catLink3="Hardware" catLink4="Apparel"
                              catLink5="Accessories"/>
+                    <MainBlock/>
                 </div>
             </div>
         </React.Fragment>
