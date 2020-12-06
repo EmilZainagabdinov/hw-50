@@ -10,7 +10,8 @@
     <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
-    <script src="header.js" type="text/babel"></script>
+    <script src="Header.js" type="text/babel"></script>
+    <script src="Sidebar.js" type="text/babel"></script>
     <title>Document</title>
 </head>
 <body>
@@ -20,6 +21,12 @@
     const page = (
         <React.Fragment>
             <Header navlink1="Home" navlink2="Shop" navlink3="News" navlink4="Contact" navlink5="About"/>
+            <div className="mainBlock py-3">
+                <div className="container row my-3">
+                    <Sidebar catLink1="3pc wheels" catLink2="Monoblock" catLink3="Hardware" catLink4="Apparel"
+                             catLink5="Accessories"/>
+                </div>
+            </div>
         </React.Fragment>
     );
 
